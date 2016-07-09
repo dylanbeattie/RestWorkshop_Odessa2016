@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>RealWorldRest</title>
+
+    <style type="text/css">
+        html {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, helvetica, sans-serif;
+            font-size: 0.875em;
+            text-align: center;
+            padding: 64px;
+        }
+
+        h1 {
+            font-size: 400%;
+        }
+        a { color: #f79523; }
+    </style>
+    <script type="text/javascript">
+        var model = @Html.Raw(JsonConvert.SerializeObject(Model));
+    </script>
+</head>
+<body>
+    <h1>@Model.greeting</h1>
+    <p>
+        <img src="~/Content/buildstuff_logo.png" />
+    </p>
+    <p><a href="https://www.getpostman.com/">Download the Postman REST client</a></p>
+</body>
+</html>
